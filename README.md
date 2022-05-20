@@ -35,7 +35,7 @@ $ git clone https://github.com/huyg1108/music_recommender.git
 
 #### Run app:
 $ cd music_recommender
-$ pip install -r requirements.txt
+$ pip install -r requirements.txt <br/>
 $ python3 app.py
 
 ## Authors:
