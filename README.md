@@ -34,7 +34,7 @@ Train         | angry           | 3995
 $ git clone https://github.com/huyg1108/music_recommender.git
 
 #### Run app:
-$ cd music_recommender
+$ cd music_recommender <br/>
 $ pip install -r requirements.txt <br/>
 $ python3 app.py
 
