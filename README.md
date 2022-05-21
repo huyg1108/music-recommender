@@ -26,7 +26,7 @@ Train         | angry           | 3995
 * We use [Convolution neural network (CNN) using tensorflow](https://www.tensorflow.org/tutorials/images/cnn) to build this model
 #### Some problems: 
 * The first version of this model is lag on my device while running app, so I must simplify this and I didn't use any pre-trained model. It is why this model has low accuracy.
-* It needs to be fine-turned for better result.
+* It needs to be fine-tuned for better result.
 * Can try Vision Transformer instead of using CNN for better result.
 
 ## Installation
