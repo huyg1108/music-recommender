@@ -23,11 +23,11 @@ Train         | angry           | 3995
 |             | surprise        | 3171
 
 ## About detection model
-* We use [Convolution neural network (CNN) using tensorflow](https://www.tensorflow.org/tutorials/images/cnn) to build this model
-#### Some problems: 
-* The first version of this model is lag on my device while running app, so I must simplify this and I didn't use any pre-trained model. It is why this model has low accuracy.
-* It needs to be fine-tuned for better result.
-* Can try Vision Transformer instead of using CNN for better result.
+* I use [Convolution neural network (CNN) using tensorflow](https://www.tensorflow.org/tutorials/images/cnn) to build this model
+* Pre-trained model:
+- [Model structure](https://github.com/serengil/deepface/blob/master/deepface/extendedmodels/Emotion.py)
+- [Pre-trained weight](https://github.com/serengil/deepface_models/releases/download/v1.0/facial_expression_model_weights.h5)
+* Note: this pre-trained model is not good so I trained it again with 50 epochs and fine-tuned it with 6 trainable layers and 10 epochs
 
 ## Installation
 #### Clone this repository: 
