@@ -25,8 +25,8 @@ Train         | angry           | 3995
 ## About detection model
 * I use [Convolution neural network (CNN) using tensorflow](https://www.tensorflow.org/tutorials/images/cnn) to build this model
 * Pre-trained model:
-- [Model structure](https://github.com/serengil/deepface/blob/master/deepface/extendedmodels/Emotion.py)
-- [Pre-trained weight](https://github.com/serengil/deepface_models/releases/download/v1.0/facial_expression_model_weights.h5)
+  - [Model structure](https://github.com/serengil/deepface/blob/master/deepface/extendedmodels/Emotion.py)
+  - [Pre-trained weight](https://github.com/serengil/deepface_models/releases/download/v1.0/facial_expression_model_weights.h5)
 * Note: this pre-trained model is not good so I trained it again with 50 epochs and fine-tuned it with 6 trainable layers and 10 epochs
 
 ## Installation
