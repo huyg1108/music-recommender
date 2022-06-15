@@ -1,6 +1,6 @@
 from flask import Flask, render_template, Response, jsonify
 import gunicorn
-from cam import *
+from camera import *
 
 app = Flask(__name__)
 
