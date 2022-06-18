@@ -39,7 +39,7 @@ model.add(Dropout(0.2))
 
 model.add(Dense(7, activation='softmax'))
 
-model.load_weights('facial_expression_model_weights.h5')
+model.load_weights('emotion_model_weights.h5')
 
 cv2.ocl.setUseOpenCL(False)
 
@@ -47,7 +47,7 @@ emotion_dict = {0:"Angry",1:"Disgust",2:"Fear",3:"Happy",4:"Neutral",5:"Sad",6:"
 music_dist={0:"songs/angry.csv",1:"songs/disgust.csv ",2:"songs/fear.csv",3:"songs/happy.csv",4:"songs/neutral.csv",5:"songs/sad.csv",6:"songs/surprise.csv"}
 
 global last_frame_1                                    
-last_frame_1 = np.zeros((360, 480, 3), dtype=np.uint8)
+last_frame_1 = np.zeros((480, 640, 3), dtype=np.uint8)
 global cap_1 
 show_text=[0]
 
@@ -128,7 +128,7 @@ class VideoCamera(object):
 		global df_1
 		cap_1 = WebcamVideoStream(src=0).start()
 		image = cap_1.read()
-		image = cv2.resize(image,(480,360))
+		image = cv2.resize(image,(600,500))
 		gray = cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
 		face_rects = face_cascade.detectMultiScale(gray,1.3,5)
 		df_1 = pd.read_csv(music_dist[show_text[0]])
