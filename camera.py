@@ -155,7 +155,6 @@ class VideoCamera(object):
 		return jpeg.tobytes(), df_1
 
 def music_rec():
-	# print('---------------- Value ------------', music_dist[show_text[0]])
 	df = pd.read_csv(music_dist[show_text[0]])
 	df = df[['Name','Album','Artist']]
 	df = df.head(20)
